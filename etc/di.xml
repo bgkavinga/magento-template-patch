@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2019 Netstarter. All rights reserved.
+ *
+ *
+ * @author      Netstarter Team <contact@netstarter.com>
+ * @copyright   Copyright (c) 2019 Netstarter Pty Ltd. (http://www.netstarter.com.au)
+ *
+ * @link        http://netstarter.com.au
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandListInterface">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="themeBuildCommand" xsi:type="object">Netstarter\Deploy\Console\Command\Template</item>
+            </argument>
+        </arguments>
+    </type>
+</config>
